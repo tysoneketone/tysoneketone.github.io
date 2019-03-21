@@ -186,11 +186,10 @@ html {
 main {
     display: flex;
     flex-direction: column;
-    text-align: center;
 
     .about {
         width: 100%;
-        
+        text-align: center;
         background-color:  #D8D7D8;
         color: #000;
         flex-direction: column;
@@ -200,8 +199,8 @@ main {
         #about-content {
         margin: auto;
         max-width: 1000px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
         text-align: center;
         font-size: 20px;
 
@@ -210,6 +209,18 @@ main {
 
     .skills {
         padding: 50px;
+
+        .language-list {
+            ul {
+                display: flex;
+                
+
+               li {
+                   list-style: none;
+                   text-decoration: none;
+               }
+            }
+        }
     }
 
     .work {
