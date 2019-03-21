@@ -168,7 +168,7 @@ html {
             font-size: 36px;
 
             span {
-                color: #2AA1B7;
+                color: #D8D7D8;
             }
         }
     }
@@ -191,8 +191,8 @@ main {
     .about {
         width: 100%;
         
-        background-color: #00abc2;
-        color: #f5f3f0;
+        background-color:  #D8D7D8;
+        color: #000;
         flex-direction: column;
         padding-top: 50px;
         padding-bottom: 50px;
@@ -214,8 +214,8 @@ main {
 
     .work {
         padding: 50px;
-        background-color: #0a0a0a;
-        color: #f5f3f0;
+        background-color: #D8D7D8;
+        color: #000;
     }
 }
 
@@ -227,9 +227,10 @@ footer {
     text-align: center;
     align-items: center;
 
-    .footer-links, .contact-links {
+    .footer-links {
        ul {
             list-style-type: none;
+            padding-left: 0;
 
             li a {
                 line-height: 1.15;
@@ -244,6 +245,7 @@ footer {
              display: inline-flex;
              justify-content: space-around;
              align-items: flex-start;
+             padding-left: 0;
  
              li a {
                  align-items: center;
