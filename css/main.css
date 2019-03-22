@@ -5,8 +5,6 @@ html {
 html body {
   margin: 0 auto;
   width: 100%;
-  background: #ff0000 no-repeat center center fixed;
-  background-size: cover;
 }
 html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body a {
   font-family: "Patua One", cursive;
@@ -19,23 +17,25 @@ html body img {
   height: 40px;
 }
 
+.intro {
+  background: url("../images/ink_water_back.png") no-repeat center center;
+  background-size: cover;
+}
 .intro nav {
-  padding: 10px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  background-color: rgba(243, 69, 42, 0.8);
 }
 .intro nav .logo {
-  padding-top: 5px;
-  padding-left: 5px;
+  padding: 10px 10px 0px;
 }
 .intro nav .logo img {
   width: 80px;
   height: 30px;
 }
 .intro nav .nav-menu {
-  padding-top: 10px;
-  padding-left: 5px;
+  padding: 10px 10px 5px;
 }
 .intro nav .nav-menu .burger {
   display: inline-block;
@@ -105,7 +105,7 @@ html body img {
 .intro nav .nav-menu .dropdown-menu ul li a {
   text-decoration: none;
   font-family: "Patua One", cursive;
-  color: #0a0a0a;
+  color: #ffffff;
   font-size: 20px;
   line-height: 1.15;
   padding: 5px;
@@ -125,7 +125,7 @@ html body img {
 .intro nav .nav-menu .burger-check:checked ~ .dropdown-menu ul li a {
   text-decoration: none;
   font-family: "Patua One", cursive;
-  color: #0a0a0a;
+  color: #000;
   font-size: 20px;
   line-height: 1.15;
   padding: 5px;
@@ -133,13 +133,14 @@ html body img {
 .intro header {
   text-align: center;
   padding-top: 180px;
-  padding-bottom: 180px;
+  padding-bottom: 100px;
 }
 .intro header h1 {
   font-size: 32px;
+  color: #ffffff;
 }
 .intro header h1 span {
-  color: #ffffff;
+  color: #F3452A;
 }
 .intro .scroll-link {
   text-align: center;
@@ -173,51 +174,58 @@ main .about #about-content {
   padding-right: 50px;
   font-size: 20px;
 }
-main .skills {
-  padding: 50px;
+main .history {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #ffffff;
   color: #000;
 }
-main .skills .language-list {
+main .history .language-list {
   display: inline-flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-main .skills .language-list .inside {
+main .history .language-list .inside {
   max-width: 400px;
 }
-main .skills .language-list .inside .inside-image {
+main .history .language-list .inside .inside-image {
   padding-top: 20px;
   padding-right: 20px;
   width: 40px;
   height: 40px;
 }
 main .work {
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #ffffff;
   color: #000;
 }
 
 footer {
+  background-color: #F3452A;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   height: 100%;
   text-align: center;
   align-items: center;
-  background-color: #ffffff;
   color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 0;
 }
 footer .footer-links ul {
   list-style-type: none;
-  width: 100%;
   display: inline-flex;
-  justify-content: space-evenly;
-  padding-left: 10px;
 }
 footer .footer-links ul li a {
   align-items: center;
+  justify-content: space-evenly;
   line-height: 2px;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 50px;
+  color: #000;
 }
 footer .contact-links ul {
   list-style-type: none;
