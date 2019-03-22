@@ -7,7 +7,7 @@ html {
     body {
         margin: 0 auto;
         width: 100%;
-        background: url("./images/tech-background.png") no-repeat center center fixed;
+        background: #ff0000 no-repeat center center fixed;
         background-size: cover;
 
         h1, h2, h3, h4, h5, h6, a {
@@ -25,11 +25,6 @@ html {
     }
 }
 
-.page-container {
-    background-color: rgba(245, 243, 240, 0.3);
-    width: 100%;
-}
-
 .intro {
     nav {
         padding: 10px;
@@ -38,11 +33,12 @@ html {
         justify-content: space-between;
 
         .logo {
+            padding-top: 5px;
             padding-left: 5px;
             
             img {
-                width: 60px;
-                height: 40px;
+                width: 80px;
+                height: 30px;
             }
         }
 
@@ -162,13 +158,14 @@ html {
 
     header {
         text-align: center;
-        padding: 100px;
+        padding-top: 180px;
+        padding-bottom: 180px;
 
         h1 {
-            font-size: 36px;
+            font-size: 32px;
 
             span {
-                color: #D8D7D8;
+                color: #ffffff;
             }
         }
     }
@@ -176,6 +173,7 @@ html {
     .scroll-link {
         text-align: center;
         padding-top: 50px;
+
         img {
             width: $width;
             height: $height;
@@ -186,11 +184,15 @@ html {
 main {
     display: flex;
     flex-direction: column;
+    text-align: center;
+
+    h2{
+        font-size: 32px;
+    }
 
     .about {
         width: 100%;
-        text-align: center;
-        background-color:  #D8D7D8;
+        background-color:  #ffffff;
         color: #000;
         flex-direction: column;
         padding-top: 50px;
@@ -201,31 +203,36 @@ main {
         max-width: 1000px;
         padding-left: 50px;
         padding-right: 50px;
-        text-align: center;
         font-size: 20px;
-
         }
     }
 
     .skills {
         padding: 50px;
+        background-color: #ffffff;
+        color: #000;
 
         .language-list {
-            ul {
-                display: flex;
-                
+            display: inline-flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
 
-               li {
-                   list-style: none;
-                   text-decoration: none;
-               }
+            .inside {
+                max-width: 400px;
+
+                .inside-image {
+                    padding-top: 20px;
+                    padding-right: 20px;
+                    width: $width;
+                    height: $height;
+                }
             }
         }
     }
 
     .work {
         padding: 50px;
-        background-color: #D8D7D8;
+        background-color: #ffffff;
         color: #000;
     }
 }
@@ -237,14 +244,20 @@ footer {
     height: 100%;
     text-align: center;
     align-items: center;
+    background-color: #ffffff;
+    color: #000;
 
     .footer-links {
-       ul {
+        ul {
             list-style-type: none;
-            padding-left: 0;
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-evenly;
+            padding-left: 10px;
 
             li a {
-                line-height: 1.15;
+                align-items: center;
+                line-height: 2px;
             }
        }
     }
@@ -263,5 +276,11 @@ footer {
                  line-height: 2px;
              }
         }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .intro header h1 {
+        font-size: 44px;
     }
 }

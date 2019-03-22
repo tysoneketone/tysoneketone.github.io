@@ -5,7 +5,7 @@ html {
 html body {
   margin: 0 auto;
   width: 100%;
-  background: url("./images/tech-background.png") no-repeat center center fixed;
+  background: #ff0000 no-repeat center center fixed;
   background-size: cover;
 }
 html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body a {
@@ -19,11 +19,6 @@ html body img {
   height: 40px;
 }
 
-.page-container {
-  background-color: rgba(245, 243, 240, 0.3);
-  width: 100%;
-}
-
 .intro nav {
   padding: 10px;
   display: flex;
@@ -31,11 +26,12 @@ html body img {
   justify-content: space-between;
 }
 .intro nav .logo {
+  padding-top: 5px;
   padding-left: 5px;
 }
 .intro nav .logo img {
-  width: 60px;
-  height: 40px;
+  width: 80px;
+  height: 30px;
 }
 .intro nav .nav-menu {
   padding-top: 10px;
@@ -136,13 +132,14 @@ html body img {
 }
 .intro header {
   text-align: center;
-  padding: 100px;
+  padding-top: 180px;
+  padding-bottom: 180px;
 }
 .intro header h1 {
-  font-size: 36px;
+  font-size: 32px;
 }
 .intro header h1 span {
-  color: #D8D7D8;
+  color: #ffffff;
 }
 .intro .scroll-link {
   text-align: center;
@@ -156,11 +153,14 @@ html body img {
 main {
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+main h2 {
+  font-size: 32px;
 }
 main .about {
   width: 100%;
-  text-align: center;
-  background-color: #D8D7D8;
+  background-color: #ffffff;
   color: #000;
   flex-direction: column;
   padding-top: 50px;
@@ -171,22 +171,30 @@ main .about #about-content {
   max-width: 1000px;
   padding-left: 50px;
   padding-right: 50px;
-  text-align: center;
   font-size: 20px;
 }
 main .skills {
   padding: 50px;
+  background-color: #ffffff;
+  color: #000;
 }
-main .skills .language-list ul {
-  display: flex;
+main .skills .language-list {
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-main .skills .language-list ul li {
-  list-style: none;
-  text-decoration: none;
+main .skills .language-list .inside {
+  max-width: 400px;
+}
+main .skills .language-list .inside .inside-image {
+  padding-top: 20px;
+  padding-right: 20px;
+  width: 40px;
+  height: 40px;
 }
 main .work {
   padding: 50px;
-  background-color: #D8D7D8;
+  background-color: #ffffff;
   color: #000;
 }
 
@@ -197,13 +205,19 @@ footer {
   height: 100%;
   text-align: center;
   align-items: center;
+  background-color: #ffffff;
+  color: #000;
 }
 footer .footer-links ul {
   list-style-type: none;
-  padding-left: 0;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  padding-left: 10px;
 }
 footer .footer-links ul li a {
-  line-height: 1.15;
+  align-items: center;
+  line-height: 2px;
 }
 footer .contact-links ul {
   list-style-type: none;
@@ -216,6 +230,12 @@ footer .contact-links ul {
 footer .contact-links ul li a {
   align-items: center;
   line-height: 2px;
+}
+
+@media screen and (min-width: 500px) {
+  .intro header h1 {
+    font-size: 44px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
