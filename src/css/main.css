@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css?family=Patua+One|Raleway:600");
+html {
+  scroll-behavior: smooth;
+  min-width: 300px;
+}
+html body {
+  margin: 0 auto;
+  width: 100%;
+}
+html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body a {
+  font-family: "Patua One", cursive;
+  color: #F3452A;
+}
+html body p {
+  font-family: "Patua One", cursive;
+}
+html body img {
+  width: 40px;
+  height: 40px;
+}
+
+.intro {
+  background: url("../images/ink_water_back.png") no-repeat center center;
+  background-size: cover;
+}
+.intro nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: #f3452a;
+  z-index: 1;
+}
+.intro nav .logo {
+  padding: 0px 10px 0px;
+}
+.intro nav .logo img {
+  width: 80px;
+  height: 40px;
+}
+.intro nav .nav-menu {
+  padding: 10px 10px 5px;
+}
+.intro nav .nav-menu .burger {
+  display: inline-block;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid currentColor;
+  width: 40px;
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out;
+}
+.intro nav .nav-menu .burger:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.intro nav .nav-menu .burger:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.intro nav .nav-menu .burger-check {
+  display: none;
+}
+.intro nav .nav-menu .burger-check:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+.intro nav .nav-menu .burger-check:checked ~ .burger:before {
+  transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.intro nav .nav-menu .burger-check:checked ~ .burger:after {
+  transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.intro nav .nav-menu .dropdown-menu {
+  text-decoration: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+.intro nav .nav-menu .dropdown-menu ul {
+  display: inline-block;
+  padding-left: 0;
+}
+.intro nav .nav-menu .dropdown-menu ul li {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline;
+}
+.intro nav .nav-menu .dropdown-menu ul li a {
+  text-decoration: none;
+  font-family: "Patua One", cursive;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.15;
+  padding-right: 20px;
+}
+.intro nav .nav-menu .burger-check:checked ~ .dropdown-menu {
+  max-height: 200px;
+  transition: max-height 0.5s ease-in-out;
+}
+.intro nav .nav-menu .burger-check:checked ~ .dropdown-menu ul {
+  display: inline-block;
+  padding-left: 0;
+}
+.intro nav .nav-menu .burger-check:checked ~ .dropdown-menu ul li {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline;
+}
+.intro nav .nav-menu .burger-check:checked ~ .dropdown-menu ul li a {
+  text-decoration: none;
+  font-family: "Patua One", cursive;
+  color: #000000;
+  font-size: 20px;
+  line-height: 1.15;
+  padding-right: 20px;
+}
+.intro nav .nav-menu .burger-check:checked ~ .dropdown-menu ul li a:hover {
+  color: #ffffff;
+}
+.intro header {
+  text-align: center;
+  padding: 240px 10px 70px;
+}
+.intro header h1 {
+  font-size: 34px;
+  color: #ffffff;
+}
+.intro header h1 span {
+  color: #F3452A;
+}
+.intro .scroll-link {
+  text-align: center;
+  padding-top: 80px;
+}
+.intro .scroll-link img {
+  width: 40px;
+  height: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+main #about-container {
+  background-color: #F3452A;
+  padding-top: 30px;
+}
+main #about-container #about-content {
+  padding: 0px 10px 30px;
+}
+main #about-container #about-content h2 {
+  color: #ffffff;
+}
+main #about-container #about-content p {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+}
+main #about-container #about-content h3 {
+  padding-top: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+main #about-container #likes-content {
+  padding: 0px;
+}
+main #about-container #likes-content .image-content .overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+main #about-container #likes-content div {
+  width: 100%;
+}
+main #about-container #likes-content div img {
+  width: 100%;
+  position: center center fixed;
+}
+main #about-container #likes-content div div .text h3 {
+  color: #ffffff;
+}
+main #about-container #likes-content div div .text p {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+}
+main .history-container {
+  background-color: #ffffff;
+  color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+main .history-container .history-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+main .history-container .language-list {
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+main .history-container .language-list .inside {
+  max-width: 400px;
+}
+main .history-container .language-list .inside .inside-image {
+  padding-top: 20px;
+  padding-right: 20px;
+  width: 40px;
+  height: 40px;
+}
+main .portfolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.image-content {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  flex-wrap: wrap;
+}
+.image-content .image {
+  width: 100%;
+  height: 100%;
+}
+.image-content .touch-check {
+  z-index: 1;
+}
+.image-content .touch-check:checked ~ .overlay {
+  opacity: 1;
+}
+.image-content .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #F3452A;
+}
+.image-content .text {
+  color: #000000;
+  font-family: "Patua One", cursive;
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+footer {
+  background-color: #F3452A;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 0;
+}
+footer .footer-links {
+  width: 100%;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+footer .footer-links a {
+  display: block;
+  text-align: center;
+  align-items: stretch;
+  justify-content: space-evenly;
+  line-height: 2px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+}
+footer .footer-links a:hover {
+  color: #ffffff;
+}
+footer .contact-links ul {
+  list-style-type: none;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 0;
+}
+footer .contact-links ul li a {
+  align-items: center;
+  line-height: 2px;
+}
+
+@media screen and (min-width: 500px) {
+  .intro header h1 {
+    font-size: 42px;
+  }
+
+  main #about-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 100px;
+  }
+  main #about-container #about-content {
+    width: 40%;
+    padding: 0px 50px 50px;
+  }
+  main #about-container #about-content h2 {
+    font-size: 38px;
+  }
+  main #about-container #likes-content {
+    width: 60%;
+  }
+  main #about-container #likes-content .image-content {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    float: left;
+  }
+
+  footer .footer-links a {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
