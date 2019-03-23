@@ -37,15 +37,25 @@
             </div>
         </section>  
         <main role="main">
-            <div id="about-container" class="about" role="article">
+            <div name="about" id="about-container" class="about" role="article">
                 <div id="about-content">
                     <div>
                         <h2>About</h2>
-                        <p><q>My goal is to build fully-responsive and interactive websites that empower businesses to reach their audience.</q></p>
-                        <p>Here are some of the things I enjoy.</p>
+                        <p><q>My goal is to build fully-responsive and interactive websites that empower businesses to reach their users in an easily accessible way.</q></p>
+                        <p>Here are some things I enjoy.</p>
                     </div>
                 </div>
                 <div id="likes-content" role="article">
+                    <div class="image-content">
+                        <input class="touch-check" type="checkbox" />
+                        <img src="./images/writting-img.png" alt="black and white image of a person writing" class="image">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3>Writing</h3>
+                                <p>Novel writing is a new hobby I have recently picked up. I enjoy writing fantasy and fan-fiction novels.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="image-content">
                         <input class="touch-check" type="checkbox" />
                         <label for="touch-check"></label>
@@ -58,15 +68,7 @@
                         </div>
                     </div>
                     <div class="image-content">
-                        <img src="./images/writting-img.png" alt="black and white image of a person writing" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                <h3>Writing</h3>
-                                <p>Novel writing is a new hobby I have recently picked up. I enjoy writing fantasy and fan-fiction novels.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="image-content">
+                        <input class="touch-check" type="checkbox" />
                         <img src="./images/muay-thai.png" alt="Muay Thai Boxer" class="image">
                         <div class="overlay">
                             <div class="text">
@@ -76,6 +78,7 @@
                         </div> 
                     </div>
                     <div class="image-content">
+                        <input class="touch-check" type="checkbox" />
                         <img src="./images/acting-img.png" alt="Film Camera" class="image">
                         <div class="overlay">
                             <div class="text">
@@ -89,38 +92,56 @@
           
 
             <div id="history" class="history-container" role="article">
-                <h2>History</h2>
-                <p>Previous roles I have held</p>
-                <div class="history-content">
-                    <div class="image-content">
-                        <img src="./images/freedom_insurance.png" alt="Freedom Insruance logo" class="image">
-                        <div class="overlay">
-                            <p class="text">Customer Care Consultant</p>
-                        </div>
+                <div class="work-history">
+                    <div class="history-content">
+                        <h2>History</h2>
+                        <p>Previous roles I have held</p>
                     </div>
-                    <div class="image-content">
-                        <img src="./images/peakbound.png" alt="Peakbound Holdings logo" class="image">
-                        <div class="overlay">
-                            <p class="text">Credit Card Retention Specialist</p>
+                    <div class="history-images">
+                        <div class="image-content">
+                            <input class="touch-check" type="checkbox" />
+                            <img src="./images/freedom_insurance.png" alt="Freedom Insruance logo" class="image">
+                            <div class="overlay">
+                                <p class="text">Customer Care Consultant</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="image-content">
-                        <img src="./images/meriton.png" alt="Meriton Suites logo" class="image">
-                        <div class="overlay">
-                            <p class="text">Guest Services Agent</p>
+                        <div class="image-content">
+                            <input class="touch-check" type="checkbox" />
+                            <img src="./images/peakbound.png" alt="Peakbound Holdings logo" class="image">
+                            <div class="overlay">
+                                <p class="text">Credit Card Retention Specialist</p>
+                            </div>
+                        </div>
+                        <div class="image-content">
+                            <input class="touch-check" type="checkbox" />
+                            <img src="./images/meriton.png" alt="Meriton Suites logo" class="image">
+                            <div class="overlay">
+                                <p class="text">Guest Services Agent</p>
+                            </div>
+                        </div>
+                        <div class="image-content">
+                            <input class="touch-check" type="checkbox" />
+                            <img src="./images/cotton-on.png" alt="Cotton on logo" class="image">
+                            <div class="overlay">
+                                <p class="text">Shift Supervisor</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="studies">
-                    <h2>Study</h2>
-                    <div class="history-content">
+                <div class="work-history study-history">
+                    <div class="study-content">
+                        <h2>Study</h2>
+                    </div>
+                    <div class="study-images">
                         <div class="image-content">
+                            <input class="touch-check" type="checkbox" />
                             <img src="./images/jmc-academy.png" alt="JMC Academy logo" class="image">
                             <div class="overlay">
                                 <p class="text">Diploma of Entertainment (Business Management)</p>
                             </div>
                         </div>
                         <div class="image-content">
+                            <input class="touch-check" type="checkbox" />
                             <img src="./images/coder-academy.png" alt="Coder Academy logo" class="image">
                             <div class="overlay">
                                 <p class="text">Currently a Student</p>
@@ -128,21 +149,19 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="language-list">
-                    <p></p>
-                    <div class="inside">
-                        <img class="inside-image" src="./images/html.png" alt="html icon"/>
-                        <img class="inside-image" src="./images/css.png" alt="css icon" />
-                        <img class="inside-image" src="./images/ruby-icon.png" alt="ruby icon" />
-                        <img class="inside-image" src="./images/javascript.png" alt="javascript icon" />
-                        <img class="inside-image" src="./images/mysql.png" alt=" mysql icon"/>
-                    </div>
-                </div>
             </div>
             <div class="portfolio" role="article">
                 <div id="portfolio">
                     <h2>Portfolio</h2>
+                    <div class="language-list">
+                            <div class="inside">
+                                <img class="inside-image" src="./images/html.png" alt="html icon"/>
+                                <img class="inside-image" src="./images/css.png" alt="css icon" />
+                                <img class="inside-image" src="./images/ruby-icon.png" alt="ruby icon" />
+                                <img class="inside-image" src="./images/javascript.png" alt="javascript icon" />
+                                <img class="inside-image" src="./images/mysql.png" alt=" mysql icon"/>
+                            </div>
+                        </div>
                     <div>
                         <a href="#"><img id="terminal-app" src="./images/teamwork-icon.png" alt="Github Drink Driving Terminal App link"/>Drink Driving App</a>
                     </div>
