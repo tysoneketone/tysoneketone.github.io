@@ -6,12 +6,9 @@ html {
 html body {
   margin: 0 auto;
   width: 100%;
+  font-family: "Raleway", sans-serif;
 }
 html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body a {
-  font-family: "Patua One", cursive;
-  color: #F3452A;
-}
-html body p {
   font-family: "Patua One", cursive;
 }
 html body img {
@@ -32,7 +29,7 @@ html body img {
   flex-direction: row-reverse;
   justify-content: space-between;
   background-color: #f3452a;
-  z-index: 1;
+  z-index: 2;
 }
 .intro nav .logo {
   padding: 0px 10px 0px;
@@ -111,10 +108,8 @@ html body img {
 }
 .intro nav .nav-menu .dropdown-menu ul li a {
   text-decoration: none;
-  font-family: "Patua One", cursive;
   color: #181818;
   font-size: 20px;
-  line-height: 1.15;
   padding-right: 20px;
 }
 .intro nav .nav-menu .burger-check:checked ~ .dropdown-menu {
@@ -164,39 +159,30 @@ html body img {
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 main h2 {
   font-size: 32px;
   font-weight: 800;
 }
-main #about-container {
-  background-color: #F3452A;
+main .about-container {
   padding-top: 30px;
 }
-main #about-container #about-content {
+main .about-container #about-content {
   padding: 0px 10px 30px;
 }
-main #about-container #about-content h2 {
-  color: #181818;
-}
-main #about-container #about-content p {
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  color: #181818;
-}
-main #about-container #likes-content {
+main .about-container #likes-content {
   padding: 0px;
 }
-main #about-container #likes-content div {
+main .about-container #likes-content div {
   width: 100%;
 }
-main #about-container #likes-content div div .text h3 {
+main .about-container #likes-content div div .text h3 {
   color: #ffffff;
 }
-main #about-container #likes-content div div .text p {
+main .about-container #likes-content div div .text p {
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
   font-size: 14px;
   padding: 10px;
 }
@@ -208,18 +194,19 @@ main .history-container .work-history {
 main .history-container .work-history .history-content {
   padding: 0px 10px 30px;
 }
-main .history-container .work-history .history-content h2 {
-  color: #181818;
-}
 main .history-container .work-history .history-content p {
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  color: #181818;
+  font-size: 14px;
 }
-main .history-container .work-history .history-content h3 {
-  padding-top: 20px;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
+main .history-container .work-history .history-images div {
+  width: 100%;
+}
+main .history-container .work-history .history-images div div .text h3 {
+  color: #ffffff;
+}
+main .history-container .work-history .history-images div div .text p {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px;
 }
 main .history-container .study-history {
   display: flex;
@@ -228,9 +215,7 @@ main .history-container .study-history {
 main .history-container .language-list {
   display: inline-flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-bottom: 40px;
 }
 main .history-container .language-list .inside {
   max-width: 400px;
@@ -241,11 +226,23 @@ main .history-container .language-list .inside .inside-image {
   width: 40px;
   height: 40px;
 }
-main .portfolio {
+main .portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #ffffff;
-  color: #181818;
+  padding-bottom: 100px;
+}
+main .portfolio-container .portfolio-content {
+  width: 100%;
+}
+main .portfolio-container .portfolio-links .image-content {
+  width: 250px;
+  height: auto;
+}
+main .portfolio-container .portfolio-links .image-content img {
+  box-shadow: 2px 3px 4px #000;
 }
 
 .image-content {
@@ -278,7 +275,7 @@ main .portfolio {
   height: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: rgba(22, 22, 22, 0.9);
+  background-color: #161616;
 }
 .image-content:hover .overlay {
   opacity: 1;
@@ -286,7 +283,7 @@ main .portfolio {
 .image-content .text {
   color: #ffffff;
   font-family: "Patua One", cursive;
-  font-size: 20px;
+  font-size: 14px;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -347,26 +344,26 @@ footer .contact-links ul li a {
     font-size: 42px;
   }
 
-  main #about-container {
+  main .about-container {
     display: flex;
     flex-direction: row;
     width: 100%;
     padding-top: 60px;
   }
-  main #about-container #about-content {
+  main .about-container #about-content {
     width: 40%;
     padding: 50px;
   }
-  main #about-container #about-content h2 {
+  main .about-container #about-content h2 {
     font-size: 38px;
   }
-  main #about-container #about-content p :nth-child(1) {
+  main .about-container #about-content p :nth-child(1) {
     font-size: 26px;
   }
-  main #about-container #likes-content {
+  main .about-container #likes-content {
     width: 60%;
   }
-  main #about-container #likes-content .image-content {
+  main .about-container #likes-content .image-content {
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -395,17 +392,38 @@ footer .contact-links ul li a {
   }
   main .history-container .work-history .history-content {
     width: 40%;
+    padding: 10px;
+  }
+  main .history-container .work-history .history-content h2 {
+    font-size: 38px;
+  }
+  main .history-container .work-history .history-content p {
+    font-size: 18px;
   }
   main .history-container .study-history {
     display: flex;
     flex-direction: row;
   }
   main .history-container .study-history .study-content {
-    width: 50%;
+    width: 60%;
+    padding: 10px;
+  }
+  main .history-container .study-history .study-content h2 {
+    font-size: 38px;
+  }
+  main .history-container .study-history .study-content p {
+    font-size: 18px;
   }
   main .history-container .study-history .study-images {
     flex-direction: column;
-    width: 50%;
+    width: 40%;
+  }
+  main .portfolio-container .portfolio-links {
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
+  main .portfolio-container .portfolio-links .image-content {
+    padding: 30px;
   }
 
   footer .footer-links a {

@@ -8,14 +8,10 @@ html {
     body {
         margin: 0 auto;
         width: 100%;
+        font-family: 'Raleway', sans-serif;
 
-        h1, h2, h3, h4, h5, h6, a {
-            font-family: 'Patua One', cursive;
-            color: #F3452A;
-        }
-
-        p {
-            font-family: 'Patua One', cursive;
+        h1, h2, h3, h4, h5 , h6, a {
+        font-family: 'Patua One', cursive;
         }
 
         img {
@@ -38,8 +34,8 @@ html {
         padding-bottom: 5px;
         flex-direction: row-reverse;
         justify-content: space-between;
-        background-color: rgba(243, 69, 42, 1);
-        z-index: 1;
+        background-color: #f3452a;
+        z-index: 2;
 
         .logo {
             padding: 0px 10px 0px;
@@ -127,10 +123,8 @@ html {
 
                         a {
                             text-decoration: none;
-                            font-family: 'Patua One', cursive;
                             color: #181818;
                             font-size: 20px;
-                            line-height: 1.15;
                             padding-right: 20px;
                         }
                     }
@@ -196,6 +190,7 @@ html {
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 
     h2 {
@@ -203,24 +198,11 @@ main {
         font-weight: 800;
     }
 
-    #about-container {
-        background-color: #F3452A;
+    .about-container {
         padding-top: 30px;
         
         #about-content {
             padding: 0px 10px 30px;
-            
-
-            h2 {
-                color: #181818;
-                
-            }
-
-            p {
-                font-size: 18px;
-                font-family: 'Raleway', sans-serif;
-                color:  #181818;
-            }
         }
 
         #likes-content {
@@ -235,7 +217,6 @@ main {
 
                 div .text p {
                     color: #ffffff;
-                    font-family: 'Raleway', sans-serif;
                     font-size: 14px;
                     padding: 10px;
                 }
@@ -244,31 +225,33 @@ main {
     }
 
     .history-container {
-
         .work-history {
             display: flex;
             flex-direction: column;
             width: 100%;
-
             .history-content {
                 padding: 0px 10px 30px;
-
-                h2 {
-                    color: #181818;
-                    
-                }
     
                 p {
-                    font-size: 18px;
-                    font-family: 'Raleway', sans-serif;
-                    color:  #181818;
+                    font-size: 14px;
                 }
+            }
+
+            .history-images {
+
+                div {
+                    width: 100%;
     
-                h3 {
-                    padding-top: 20px;
-                    font-family: 'Raleway', sans-serif;
-                    font-size: 18px;
-                } 
+                    div .text h3 {
+                        color: #ffffff;
+                    }
+    
+                    div .text p {
+                        color: #ffffff;
+                        font-size: 14px;
+                        padding: 10px;
+                    }
+                }
             }
         }
 
@@ -280,9 +263,7 @@ main {
         .language-list {
             display: inline-flex;
             justify-content: space-evenly;
-            flex-wrap: wrap;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-bottom: 40px;
 
             .inside {
                 max-width: 400px;
@@ -297,11 +278,28 @@ main {
         }
     }
 
-    .portfolio {
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         padding-top: 50px;
-        padding-bottom: 50px;
-        background-color: #ffffff;
-        color: #181818;
+        padding-bottom: 100px;
+
+        .portfolio-content {
+            width: 100%;
+        }
+
+        .portfolio-links {
+            .image-content {
+                width: 250px;
+                height: auto;
+
+                img {
+                    box-shadow: 2px 3px 4px #000;
+                }
+            }
+        }
     }
 }
 
@@ -338,7 +336,7 @@ main {
         height: 100%;
         opacity: 0;
         transition: .5s ease;
-        background-color: rgb(22, 22, 22,0.9);
+        background-color: #161616;
     }
     
     &:hover .overlay {
@@ -348,7 +346,7 @@ main {
     .text {
         color: #ffffff;
         font-family: 'Patua One', cursive;
-        font-size: 20px;
+        font-size: 14px;
         position: absolute;
         top: 40%;
         left: 50%;
@@ -423,7 +421,7 @@ footer {
     }
 
     main {
-        #about-container {
+        .about-container {
             display: flex;
             flex-direction: row; 
             width: 100%;
@@ -481,22 +479,49 @@ footer {
 
                 .history-content {
                     width: 40%;
-                    
+                    padding: 10px;    
+
+                    h2 { 
+                        font-size: 38px;
+                    }
+    
+                    p {
+                        font-size: 18px;
+                    }
                 }
             }
 
             .study-history {
                 display: flex;
                 flex-direction: row;
-
     
                 .study-content {
-                    width: 50%;
+                    width: 60%;
+                    padding: 10px;
+
+                    h2 { 
+                        font-size: 38px;
+                    }
+    
+                    p {
+                        font-size: 18px;
+                    }
                 }
     
                 .study-images {
                     flex-direction: column;
-                    width: 50%;
+                    width: 40%;
+                }
+            }
+        }
+
+        .portfolio-container {
+            .portfolio-links {
+                display: inline-flex;
+                justify-content: space-evenly;
+
+                .image-content {
+                    padding: 30px;
                 }
             }
         }
