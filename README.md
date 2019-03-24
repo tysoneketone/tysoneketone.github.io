@@ -55,27 +55,27 @@ See screenshots below of examples.
 ![trello screenshot 2](/docs/images/trello_screen_shot_2.png)
 
 ### Describe key events in the development of the internet from the 1980s to today.
-The earlier use of the internet was primarily used for the US goverment to communicate on a single network within the military and government bodies and so with the introduction CSNET in 1981 by The National Science Foundation, it opened up new avenues for the educational institutions.
+The earlier use of the internet was primarily used for the US goverment to communicate on a single network within the military and government bodies. However with the introduction CSNET in 1981 by The National Science Foundation, it opened up new avenues for the educational institutions.
 
-It wasn't until 1989 that the World wide web was invented which was first invented by Sir Timothy John "Tim" Berners-Lee, an engineer and computer scientist from Great Britin, working as a professor at MIT and CERN Laboratory. With this established, it didn't take long for www browser was available for download to the public in 1992, and was the start of the world wide web.
+It wasn't until 1989 that the World wide web was created which was first invented by Sir Timothy John "Tim" Berners-Lee, an engineer and computer scientist from Great Britain, working as a professor at MIT and CERN Laboratory. It didn't take long for www browser to become readily available for download to the public in 1992 and was the beginning of the world wide web.
 
-The explosive growth of the internet lead to commercial use and development of search engines giant such as Yahoo which was established in 1994. Such develops lead to the technology boom to what it is today. 
+The explosive growth of the internet lead to commercial use and development of search engines giant such as Yahoo which was established in 1994 and only grew astronomically. By 1997, there was already over 16 million hosts on the web.
 
 ### Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers.
 
-Domains are the host name or website URL. This is used in place of the IP Address as it is more memorable. DNS stands for Domain Name Systems which is essentially the phone book of the internet. It is the way domain names are located and translated into IP Addresses. This also allows Web Browsers to locate, read and diplay web pages for their users. 
+Domains are the host name or website URL. This is used in place of the IP Address as it is more memorable. DNS stands for Domain Name Systems which is essentially the phone book of the internet. It is the way domain names are located and translated into IP Addresses. It makes it easier for web browsers to locate, read and display correct web pages for the intended end user. 
 
-However to communicate between the DNS and web browser, a web server is needed to send and retrieve data between the two. THe internet is not able to function if one of these four aspects are not working. 
+Web servers is hardware that plays the vital role of storing and running websites by sending and retreiving client requests. Without all four elements, no data can be sent or retrieved successfully. 
 
 
 ### Reflect on one aspect of the development of internet technologies and how it has contributed to the world today.
 With the development of internet technologies, this has improved immediate communicaion between people, pioneering the way for social media giants to establish themselves in the world. 
 
-Long has gone the day where we need to queue at the post office to send a personal letter to a friend or family overseas. With the use of social media sites, we can communicate with family and friends from all over the world in an instant, meet our significant other through dating apps or simpy watch cat videos to pass time.
+Long has gone the day where we need to queue at the post office to send a personal letter to a friend or family member overseas. With the use of social media sites, we can communicate with family and friends from all over the world in an instant, meet our significant other through dating apps or simpy watch cat videos to pass time.
 
-Some Global Businesses rely solely on these internet technologies to sustain their businesses such as Facebook, Twitter, Instagram, Snapchat, Tinder e.t.c.
+Many Global Businesses rely solely on these internet technologies to sustain their business such as Facebook, Twitter, Instagram, Snapchat, Tinder e.t.c.
 
-If the internet ceased to exist globally, these companies would collapse or if they do survive, it would not be operating on such a large scale like they do today. 
+If the internet ceased to exist tomorrow, these companies would collapse. 
 
 ## References
 https://www.computerhistory.org/internethistory/1980s/
