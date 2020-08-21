@@ -245,10 +245,39 @@ html .container .home__container .home__content .home__content-subtitle {
   }
 }
 
+html .container .home__container .home__content .home__content-skills__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+html .container .home__container .home__content .home__content-skills__list li {
+  margin-top: var(--spacer-xs);
+  padding-right: var(--spacer);
+  font-size: var(--font-size-callout);
+  letter-spacing: 2px;
+}
+
+html .container .home__container .home__content .home__content-skills__list li:not(:first-child) {
+  border-left: var(--border-width-separator) solid var(--color-white);
+  padding-left: var(--spacer);
+}
+
+@media only screen and (max-width: 600px) {
+  html .container .home__container .home__content .home__content-skills__list li {
+    font-size: var(--font-size-caption1);
+  }
+}
+
 html .container .home__container .home__content .home__content-nav__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 html .container .home__container .home__content .home__content-nav__menu > *:not(:first-child) {

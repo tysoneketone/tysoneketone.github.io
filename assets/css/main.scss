@@ -71,8 +71,30 @@ html {
             font-size: var(--spacer-ml);
           }
         }
+        .home__content-skills__list {
+          display: flex;
+          list-style-type: none;
+          padding-left: 0;
+
+          li {
+            margin-top: var(--spacer-xs);
+            padding-right: var(--spacer);
+
+            font-size: var(--font-size-callout);
+            letter-spacing: 2px;
+
+            &:not(:first-child) {
+              border-left: var(--border-width-separator) solid var(--color-white);
+              padding-left: var(--spacer);
+            }
+            @media only screen and (max-width: 600px) {
+              font-size: var(--font-size-caption1);
+            }
+          }
+        }
         .home__content-nav__menu {
           display: flex;
+          justify-content: center;
     
           > *:not(:first-child) {
             margin-left: var(--spacer-lg);
