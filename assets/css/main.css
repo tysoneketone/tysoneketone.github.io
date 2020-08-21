@@ -167,12 +167,16 @@ html .container {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100vh;
   margin: 0 auto;
-  padding-right: var(--spacer);
-  padding-left: var(--spacer);
+  padding: 0 var(--spacer);
   background: var(--color-black);
   color: var(--color-white);
+}
+
+@media only screen and (orientation: landscape) {
+  html .container {
+    height: 100vh;
+  }
 }
 
 html .container .home__container {
@@ -207,6 +211,13 @@ html .container .home__container .home__content > * {
 
 @media only screen and (max-width: 860px) {
   html .container .home__container .home__content {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  html .container .home__container .home__content {
     width: 100%;
   }
 }
@@ -222,39 +233,24 @@ html .container .home__container .home__content .home__content-intro {
 @media only screen and (max-width: 860px) {
   html .container .home__container .home__content .home__content-intro {
     font-size: var(--spacer-ml);
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  html .container .home__container .home__content .home__content-intro {
-    text-align: left;
   }
 }
 
 html .container .home__container .home__content .home__content-title {
-  text-align: center;
   margin-bottom: 0;
   font-size: var(--spacer-xl);
   font-weight: var(--font-weight-bold);
   letter-spacing: 3px;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 414px) {
   html .container .home__container .home__content .home__content-title {
     font-size: var(--spacer-lg);
   }
 }
 
-@media only screen and (max-width: 414px) {
-  html .container .home__container .home__content .home__content-title {
-    text-align: left;
-  }
-}
-
 html .container .home__container .home__content .home__content-subtitle {
   margin-bottom: 0;
-  text-align: center;
   font-size: var(--spacer-lg);
   font-weight: var(--font-weight-normal);
   letter-spacing: 2px;
@@ -284,6 +280,7 @@ html .container .home__container .home__content .home__content-skills__list {
 }
 
 html .container .home__container .home__content .home__content-skills__list li {
+  display: inline-block;
   margin-top: var(--spacer-xs);
   padding-right: var(--spacer);
   font-size: var(--font-size-callout);
@@ -298,6 +295,14 @@ html .container .home__container .home__content .home__content-skills__list li:n
 @media only screen and (max-width: 860px) {
   html .container .home__container .home__content .home__content-skills__list li {
     font-size: var(--font-size-caption1);
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  html .container .home__container .home__content .home__content-skills__list li:first-child {
+    padding-right: var(--spacer-sm);
+    padding-left: 0;
   }
 }
 
