@@ -205,6 +205,12 @@ html .container .home__container .home__content > * {
   margin-top: var(--spacer-sm);
 }
 
+@media only screen and (max-width: 860px) {
+  html .container .home__container .home__content {
+    width: 100%;
+  }
+}
+
 html .container .home__container .home__content .home__content-intro {
   text-align: left;
   margin-bottom: 0;
@@ -213,35 +219,56 @@ html .container .home__container .home__content .home__content-intro {
   letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 860px) {
   html .container .home__container .home__content .home__content-intro {
     font-size: var(--spacer-ml);
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  html .container .home__container .home__content .home__content-intro {
+    text-align: left;
   }
 }
 
 html .container .home__container .home__content .home__content-title {
+  text-align: center;
   margin-bottom: 0;
   font-size: var(--spacer-xl);
   font-weight: var(--font-weight-bold);
   letter-spacing: 3px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 860px) {
   html .container .home__container .home__content .home__content-title {
     font-size: var(--spacer-lg);
   }
 }
 
+@media only screen and (max-width: 414px) {
+  html .container .home__container .home__content .home__content-title {
+    text-align: left;
+  }
+}
+
 html .container .home__container .home__content .home__content-subtitle {
   margin-bottom: 0;
+  text-align: center;
   font-size: var(--spacer-lg);
   font-weight: var(--font-weight-normal);
   letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 860px) {
   html .container .home__container .home__content .home__content-subtitle {
     font-size: var(--spacer-ml);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  html .container .home__container .home__content .home__content-subtitle {
+    text-align: left;
   }
 }
 
@@ -268,7 +295,7 @@ html .container .home__container .home__content .home__content-skills__list li:n
   padding-left: var(--spacer);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 860px) {
   html .container .home__container .home__content .home__content-skills__list li {
     font-size: var(--font-size-caption1);
   }
@@ -314,8 +341,12 @@ html .container .home__container .home__profile {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 14rem;
-  height: 14rem;
+}
+
+@media only screen and (max-width: 860px) {
+  html .container .home__container .home__profile {
+    width: 100%;
+  }
 }
 
 html .container .home__container .home__profile img {
