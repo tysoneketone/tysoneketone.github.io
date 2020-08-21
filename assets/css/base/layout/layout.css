@@ -1,0 +1,40 @@
+html {
+  --base-rem: 20px;
+  --spacer-xl: 4rem;
+  --spacer-lg: 2rem;
+  --spacer-ml: 1.5rem;
+  --spacer: 1rem;
+  --spacer-ms: 0.75rem;
+  --spacer-sm: 0.5rem;
+  --spacer-xs: 0.25rem;
+  --spacer-xxs: 0.13rem;
+  --spacer-window: var(--spacer-lg);
+  --sidebar-width: 250px;
+  --border-width-narrow: 1px;
+  --border-width-separator: 2px;
+  --border-width-outline: 3px;
+  --border-radius-lg: 0.5rem;
+  --border-radius: 0.25rem;
+  --border-radius-sm: 0.125rem;
+  --icon-size-xs: 0.25rem;
+  --icon-size-sm: 0.5rem;
+  --icon-size-ms: 0.75rem;
+  --icon-size: 1rem;
+  --icon-size-ml: 1.5rem;
+  --icon-size-lg: 2rem;
+  --icon-size-xl: 4rem;
+  --icon-size-xxl: 8rem;
+  --thumbnail-size-sm: 2rem;
+  --thumbnail-size: 4rem;
+  --input-height: 2rem;
+  --input-height-tall: 6rem;
+  --input-width-narrow: 6rem;
+  --input-width-small: 8rem;
+  --input-width-normal: 10rem;
+  --row-padding: 0.5rem 0 0.5rem 0;
+  --outline-width: var(--border-width-outline);
+  --z-index-scrollsnap: 105;
+  --z-index-navbar: 109;
+  --z-index-overlay: 110;
+}
+/*# sourceMappingURL=layout.css.map */
