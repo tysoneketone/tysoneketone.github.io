@@ -170,8 +170,6 @@ html .container {
   height: 100vh;
   margin: 0 auto;
   padding: 0 var(--spacer);
-  background: var(--color-black);
-  color: var(--color-white);
 }
 
 @media only screen and (max-width: 860px) and (orientation: landscape) {
@@ -295,7 +293,7 @@ html .container .home__container .home__content .home__content-skills__list li {
 }
 
 html .container .home__container .home__content .home__content-skills__list li:not(:first-child) {
-  border-left: var(--border-width-separator) solid var(--color-white);
+  border-left: var(--border-width-separator) solid var(--color-black);
   padding-left: var(--spacer);
 }
 
@@ -338,8 +336,8 @@ html .container .home__container .home__content .home__content-nav__menu .nav__m
 }
 
 html .container .home__container .home__content .home__content-nav__menu .nav__menu-item span:hover {
-  color: var(--color-white);
-  border-bottom: var(--border-width-separator) solid var(--color-white);
+  color: var(--color-black);
+  border-bottom: var(--border-width-separator) solid var(--color-black);
 }
 
 html .container .home__container .home__profile {

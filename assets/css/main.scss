@@ -17,9 +17,6 @@ html {
     margin: 0 auto;
     padding: 0 var(--spacer);
 
-    background: var(--color-black);
-    color: var(--color-white);
-
     @media only screen and (max-width: 860px) {
       @media screen and (orientation: landscape) {
         height: 100%;
@@ -106,7 +103,7 @@ html {
             letter-spacing: 2px;
 
             &:not(:first-child) {
-              border-left: var(--border-width-separator) solid var(--color-white);
+              border-left: var(--border-width-separator) solid var(--color-black);
               padding-left: var(--spacer);
             }
             @media only screen and (max-width: 860px) {
@@ -134,13 +131,13 @@ html {
             font-weight: var(--font-weight-bold);
             letter-spacing: 2px;
             text-decoration: none;
-    
+
             span {
               padding-bottom: var(--spacer-xs);
     
               &:hover {
-                color: var(--color-white);
-                border-bottom: var(--border-width-separator) solid var(--color-white);
+                color: var(--color-black);
+                border-bottom: var(--border-width-separator) solid var(--color-black);
               }
             }      
           }
