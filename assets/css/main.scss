@@ -20,6 +20,13 @@ html {
     background: var(--color-black);
     color: var(--color-white);
 
+    @media only screen and (max-width: 860px) {
+      @media screen and (orientation: landscape) {
+        height: 100%;
+        padding-bottom: var(--spacer-window);
+      }
+    }
+
     .home__container {
       display: flex;
       flex-wrap: wrap;
@@ -30,18 +37,19 @@ html {
         margin: var(--spacer-ml);
       }
 
+      @media only screen and (max-width: 860px) {
+        justify-content: center;
+      }
+
       .home__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        > * {
+        > *:not(:nth-child(3)) {
           margin-top: var(--spacer-sm);
         }
-        @media only screen and (max-width: 860px) {
-          width: 75%;
-          margin: auto;
-        }
+
         @media only screen and (max-width: 414px) {
           width: 100%;
         }
@@ -68,21 +76,25 @@ html {
           }
         }
         .home__content-subtitle {
+          margin-top: var(--spacer-xxs);
           margin-bottom: 0;
           font-size: var(--spacer-lg);
           font-weight: var(--font-weight-normal);
           letter-spacing: 2px;
 
           @media only screen and (max-width: 860px) {
+            width: 100%;
+            margin: auto;
             font-size: var(--spacer-ml);
           }
           @media only screen and (max-width: 414px) {
+            width: 100%;
             text-align: left;
           }
         }
         .home__content-skills__list {
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
           list-style-type: none;
           padding-left: 0;
 
@@ -103,8 +115,7 @@ html {
             }
             @media only screen and (max-width: 414px) {
               &:first-child {
-                padding-right: var(--spacer-sm);
-                padding-left: 0;
+                padding-right: var(--spacer-xxs);
               }
             }
           }
