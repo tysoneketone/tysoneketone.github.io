@@ -126,15 +126,20 @@ html {
           }
 
           .nav__menu-item {
-            color: var(--color-link);
+            color: var(--color-nav-link);
             font-size: var(--font-size-title4);
             font-weight: var(--font-weight-bold);
             letter-spacing: 2px;
             text-decoration: none;
 
+            img {
+              width: 40px;
+              height: 40px;
+            }
+
             span {
-              padding-bottom: var(--spacer-xs);
-    
+              padding-bottom: var(--spacer-xxs);
+
               &:hover {
                 color: var(--color-black);
                 border-bottom: var(--border-width-separator) solid var(--color-black);
