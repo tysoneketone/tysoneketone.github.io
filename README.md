@@ -4,6 +4,6 @@ Website URL: https://tysoneketone.github.io/
 Github Link: https://github.com/TysonEketone/my_portfolio
 
 ---
-## Portfolio
+## Purpose
 
-This site is a business card style site created with HTML and CSS.
+This is a business card style website created with HTML and CSS.
