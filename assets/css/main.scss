@@ -79,11 +79,15 @@ html {
       margin-top: -10px;
 
       > * {
-        padding: var(--spacer);
+        padding-top: var(--spacer);
+        padding-bottom: var(--spacer);
       }
 
       @media only screen and (max-width: 860px) {
         justify-content: center;
+      }
+      @media only screen and (max-width: 330px) {
+        margin-left: var(--spacer);
       }
 
       .home__content-wrapper {
@@ -152,13 +156,16 @@ html {
             li {
               display: inline-block;
               margin-top: var(--spacer-xs);
-              padding-right: var(--spacer);
               font-size: var(--font-size-callout);
               letter-spacing: var(--letter-spacing-lg);
   
               &:not(:first-child) {
                 border-left: var(--border-width-separator) solid var(--color-black);
                 padding-left: var(--spacer);
+              }
+
+              &:not(:last-child) {
+                padding-right: var(--spacer-sm);
               }
   
               @media only screen and (max-width: 860px) {
@@ -169,7 +176,8 @@ html {
                 &:not(:first-child) {
                   padding-left: var(--spacer-sm);
                 }
-                &:not(:last-child) {
+                &:not(:last-child),
+                &:not(:first-child) {
                   padding-right: var(--spacer-sm);
                 }
               }
@@ -239,9 +247,6 @@ html {
     }
 
     &.dark-mode {
-      width: 100%;
-      height: 100%;
-
       background: var(--color-black);
       color: var(--color-white);
 
@@ -251,7 +256,6 @@ html {
             li {
               &:not(:first-child) {
                 border-left: var(--border-width-separator) solid var(--color-white);
-                padding-left: var(--spacer);
               }
             }
           }

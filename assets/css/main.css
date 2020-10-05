@@ -249,7 +249,8 @@ html .container .home__container {
 }
 
 html .container .home__container > * {
-  padding: var(--spacer);
+  padding-top: var(--spacer);
+  padding-bottom: var(--spacer);
 }
 
 @media only screen and (max-width: 860px) {
@@ -257,6 +258,12 @@ html .container .home__container > * {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  html .container .home__container {
+    margin-left: var(--spacer);
   }
 }
 
@@ -354,7 +361,6 @@ html .container .home__container .home__content-wrapper .home__content .home__co
 html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li {
   display: inline-block;
   margin-top: var(--spacer-xs);
-  padding-right: var(--spacer);
   font-size: var(--font-size-callout);
   letter-spacing: var(--letter-spacing-lg);
 }
@@ -362,6 +368,10 @@ html .container .home__container .home__content-wrapper .home__content .home__co
 html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li:not(:first-child) {
   border-left: var(--border-width-separator) solid var(--color-black);
   padding-left: var(--spacer);
+}
+
+html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li:not(:last-child) {
+  padding-right: var(--spacer-sm);
 }
 
 @media only screen and (max-width: 860px) {
@@ -373,7 +383,7 @@ html .container .home__container .home__content-wrapper .home__content .home__co
   html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li:not(:first-child) {
     padding-left: var(--spacer-sm);
   }
-  html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li:not(:last-child) {
+  html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li:not(:last-child), html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li:not(:first-child) {
     padding-right: var(--spacer-sm);
   }
 }
@@ -459,15 +469,12 @@ html .container .home__container .home__profile img {
 }
 
 html .container.dark-mode {
-  width: 100%;
-  height: 100%;
   background: var(--color-black);
   color: var(--color-white);
 }
 
 html .container.dark-mode .home__container .home__content .home__content-skills__list li:not(:first-child) {
   border-left: var(--border-width-separator) solid var(--color-white);
-  padding-left: var(--spacer);
 }
 
 html .container.dark-mode .home__container .home__content .home__content--social__links .social__links--link .icon__github {
