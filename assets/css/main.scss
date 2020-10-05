@@ -232,6 +232,8 @@ html {
         justify-content: center;
         align-items: center;
 
+        padding: var(--spacer);
+
         @media only screen and (max-width: 860px) {
           width: 100%;
         }
