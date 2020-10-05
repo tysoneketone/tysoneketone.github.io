@@ -10,6 +10,9 @@
   </head>
 
   <body class="container">
+    <div class="mode__container">
+      <span class="mode light-mode" onclick="modeToggle()"></span>
+    </div>
     <div class="home__container">
       <div class="home__content">
         <h3 class="home__content-intro">Hi, I'm</h3>
@@ -22,18 +25,18 @@
           <li>NODE JS</li>
           <li>EXPRESS JS</li>
         </ul>
-        <div class="home__content-nav__menu">
-          <a href="https://github.com/TysonEketone" class="nav__menu-item">
-            <img src="./assets/svgs/icon_github.svg" alt="github icon" />
+        <div class="home__content--social__links">
+          <a href="https://github.com/TysonEketone" class="social__links--link">
+            <span class="icon__github"></span>
           </a>
-          <a href="https://www.linkedin.com/in/tyson-eketone-aa433844/" class="nav__menu-item">
-            <img src="./assets/svgs/icon_linkedin.svg" alt="linkedin icon" />
+          <a href="https://www.linkedin.com/in/tyson-eketone-aa433844/" class="social__links--link">
+            <span class="icon__linkedin"></span>
           </a>
-          <a href="https://twitter.com/TysonEketone" class="nav__menu-item">
-            <img src="./assets/svgs/icon_twitter.svg" alt="twitter icon" />
+          <a href="https://twitter.com/TysonEketone" class="social__links--link">
+            <span class="icon__twitter"></span>
           </a>
-          <a href="mailto:tysoneketone@gmail.com?subject= Contact Enquiry" class="nav__menu-item">
-            <img src="./assets/svgs/icon_mail.svg" alt="mail icon" />
+          <a href="mailto:tysoneketone@gmail.com?subject= Contact Enquiry" class="social__links--link">
+            <span class="icon__mail"></span>
           </a>
         </div>
       </div>
@@ -42,4 +45,6 @@
       </div>
     </div>
   </body>
+
+  <script src="assets/javascript/dark_mode.js"></script>
 </html>
