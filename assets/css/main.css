@@ -167,9 +167,6 @@ html .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   height: 100vh;
   margin: 0 auto;
@@ -195,17 +192,17 @@ html .container .mode__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  z-index: 2;
   width: 100%;
   height: 50px;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 860px) {
   html .container .mode__container {
-    padding-bottom: 30%;
+    padding-bottom: 10%;
   }
 }
 
@@ -214,8 +211,12 @@ html .container .mode__container .mode {
   width: var(--icon-size-xl);
   height: var(--icon-size-xl);
   margin: var(--spacer-sm);
-  border: 0;
-  text-decoration: none;
+}
+
+@media only screen and (max-width: 414px) {
+  html .container .mode__container .mode {
+    margin: 0;
+  }
 }
 
 html .container .mode__container .mode.dark-mode {
@@ -234,21 +235,21 @@ html .container .home__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 1200px auto;
   height: 100%;
-  margin-top: -100px;
+  margin-top: -10px;
 }
 
 html .container .home__container > * {
-  margin: var(--spacer-ml);
+  padding: var(--spacer);
 }
 
 @media only screen and (max-width: 860px) {
@@ -259,7 +260,16 @@ html .container .home__container > * {
   }
 }
 
-html .container .home__container .home__content {
+html .container .home__container .home__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .container .home__container .home__content-wrapper .home__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,23 +277,21 @@ html .container .home__container .home__content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
-html .container .home__container .home__content > *:not(:nth-child(3)) {
+html .container .home__container .home__content-wrapper .home__content > *:not(:nth-child(3)) {
   margin-top: var(--spacer-sm);
 }
 
 @media only screen and (max-width: 414px) {
-  html .container .home__container .home__content {
+  html .container .home__container .home__content-wrapper .home__content {
     width: 100%;
   }
 }
 
-html .container .home__container .home__content .home__content-intro {
-  text-align: left;
+html .container .home__container .home__content-wrapper .home__content .home__content-intro {
   margin-bottom: 0;
   font-size: var(--spacer-lg);
   font-weight: var(--font-weight-normal);
@@ -291,12 +299,12 @@ html .container .home__container .home__content .home__content-intro {
 }
 
 @media only screen and (max-width: 860px) {
-  html .container .home__container .home__content .home__content-intro {
+  html .container .home__container .home__content-wrapper .home__content .home__content-intro {
     font-size: var(--spacer-ml);
   }
 }
 
-html .container .home__container .home__content .home__content-title {
+html .container .home__container .home__content-wrapper .home__content .home__content-title {
   margin-bottom: 0;
   font-size: var(--spacer-xl);
   font-weight: var(--font-weight-bold);
@@ -304,12 +312,12 @@ html .container .home__container .home__content .home__content-title {
 }
 
 @media only screen and (max-width: 414px) {
-  html .container .home__container .home__content .home__content-title {
+  html .container .home__container .home__content-wrapper .home__content .home__content-title {
     font-size: var(--spacer-lg);
   }
 }
 
-html .container .home__container .home__content .home__content-subtitle {
+html .container .home__container .home__content-wrapper .home__content .home__content-subtitle {
   margin-top: var(--spacer-xxs);
   margin-bottom: 0;
   font-size: var(--spacer-lg);
@@ -318,7 +326,7 @@ html .container .home__container .home__content .home__content-subtitle {
 }
 
 @media only screen and (max-width: 860px) {
-  html .container .home__container .home__content .home__content-subtitle {
+  html .container .home__container .home__content-wrapper .home__content .home__content-subtitle {
     width: 100%;
     margin: auto;
     font-size: var(--spacer-ml);
@@ -326,13 +334,13 @@ html .container .home__container .home__content .home__content-subtitle {
 }
 
 @media only screen and (max-width: 414px) {
-  html .container .home__container .home__content .home__content-subtitle {
+  html .container .home__container .home__content-wrapper .home__content .home__content-subtitle {
     width: 100%;
     text-align: left;
   }
 }
 
-html .container .home__container .home__content .home__content-skills__list {
+html .container .home__container .home__content-wrapper .home__content .home__content-skills__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +351,7 @@ html .container .home__container .home__content .home__content-skills__list {
   padding-left: 0;
 }
 
-html .container .home__container .home__content .home__content-skills__list li {
+html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li {
   display: inline-block;
   margin-top: var(--spacer-xs);
   padding-right: var(--spacer);
@@ -351,30 +359,35 @@ html .container .home__container .home__content .home__content-skills__list li {
   letter-spacing: var(--letter-spacing-lg);
 }
 
-html .container .home__container .home__content .home__content-skills__list li:not(:first-child) {
+html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li:not(:first-child) {
   border-left: var(--border-width-separator) solid var(--color-black);
   padding-left: var(--spacer);
 }
 
 @media only screen and (max-width: 860px) {
-  html .container .home__container .home__content .home__content-skills__list li {
-    font-size: var(--font-size-caption1);
+  html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li {
+    font-size: var(--font-size-caption2);
     text-align: left;
+    padding-right: 0;
+  }
+  html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li:not(:first-child) {
+    padding-left: var(--spacer-sm);
+  }
+  html .container .home__container .home__content-wrapper .home__content .home__content-skills__list li:not(:last-child) {
+    padding-right: var(--spacer-sm);
   }
 }
 
-html .container .home__container .home__content .home__content--social__links {
+html .container .home__container .home__content-wrapper .home__content .home__content--social__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  height: 50px;
 }
 
-html .container .home__container .home__content .home__content--social__links a.social__links--link {
+html .container .home__container .home__content-wrapper .home__content .home__content--social__links a.social__links--link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,28 +403,28 @@ html .container .home__container .home__content .home__content--social__links a.
   margin-left: var(--spacer);
 }
 
-html .container .home__container .home__content .home__content--social__links a.social__links--link .icon__github {
+html .container .home__container .home__content-wrapper .home__content .home__content--social__links a.social__links--link .icon__github {
   width: 100%;
   height: 100%;
   background: url("../svgs/icon_github.svg") center center no-repeat;
   background-size: var(--icon-size-lg) var(--icon-size-lg);
 }
 
-html .container .home__container .home__content .home__content--social__links a.social__links--link .icon__linkedin {
+html .container .home__container .home__content-wrapper .home__content .home__content--social__links a.social__links--link .icon__linkedin {
   width: 100%;
   height: 100%;
   background: url("../svgs/icon_linkedin.svg") center center no-repeat;
   background-size: var(--icon-size-lg) var(--icon-size-lg);
 }
 
-html .container .home__container .home__content .home__content--social__links a.social__links--link .icon__twitter {
+html .container .home__container .home__content-wrapper .home__content .home__content--social__links a.social__links--link .icon__twitter {
   width: 100%;
   height: 100%;
   background: url("../svgs/icon_twitter.svg") center center no-repeat;
   background-size: var(--icon-size-lg) var(--icon-size-lg);
 }
 
-html .container .home__container .home__content .home__content--social__links a.social__links--link .icon__mail {
+html .container .home__container .home__content-wrapper .home__content .home__content--social__links a.social__links--link .icon__mail {
   width: 100%;
   height: 100%;
   background: url("../svgs/icon_mail.svg") center center no-repeat;
@@ -446,6 +459,8 @@ html .container .home__container .home__profile img {
 }
 
 html .container.dark-mode {
+  width: 100%;
+  height: 100%;
   background: var(--color-black);
   color: var(--color-white);
 }
