@@ -211,6 +211,7 @@ html .container .mode__container .mode {
   width: var(--icon-size-xl);
   height: var(--icon-size-xl);
   margin: var(--spacer-sm);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 414px) {
@@ -220,6 +221,7 @@ html .container .mode__container .mode {
 }
 
 html .container .mode__container .mode.dark-mode {
+  cursor: pointer;
   background: url("../svgs/icon_sun.svg") center center no-repeat;
   background-size: var(--icon-size-lg) var(--icon-size-lg);
   -webkit-filter: invert(90%) sepia(1000%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
@@ -227,6 +229,7 @@ html .container .mode__container .mode.dark-mode {
 }
 
 html .container .mode__container .mode.light-mode {
+  cursor: pointer;
   background: url("../svgs/icon_moon.svg") center center no-repeat;
   background-size: var(--icon-size-ml) var(--icon-size-ml);
 }
