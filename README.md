@@ -1,9 +1,10 @@
-# PORTFOLIO
+# Welcome to my portfolio website
 
-Website URL: https://tysoneketone.github.io/
-Github Link: https://github.com/TysonEketone/my_portfolio
+- Website URL: <https://tysoneketone.github.io>
+- Github Repo: <https://github.com/tysoneketone/tysoneketone.github.io>
 
 ---
-## Purpose
 
-This is a business card style website created with HTML and CSS.
+## What is this about?
+
+This repo focuses on my portfolio as a developer and is still a work in progress.
